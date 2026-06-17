@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { useState, type FormEvent } from "react";
+import { useRouter } from 'next/navigation';
+import { useNavigate } from 'react-router-dom';
 
 type Status = "idle" | "loading" | "error";
 
@@ -12,6 +14,8 @@ export default function LoginForm() {
   const [remember, setRemember] = useState(false);
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+
+  const router = useRouter();
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -36,9 +40,10 @@ export default function LoginForm() {
     setStatus("loading");
     window.setTimeout(() => {
       setStatus("idle");
-      window.alert(
-        "🚧 Demo mode: ยังไม่ได้เชื่อมต่อ backend\nฟอร์มนี้ใช้สำหรับทดสอบ UI เท่านั้น"
-      );
+      router.push('/'); // Navigate to the Feature page after successful login
+      // window.alert(
+      //   "🚧 Demo mode: ยังไม่ได้เชื่อมต่อ backend\nฟอร์มนี้ใช้สำหรับทดสอบ UI เท่านั้น"
+      // );
     }, 1200);
   }
 
