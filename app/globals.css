@@ -3,9 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --brand-from: #6366f1; /* indigo-500 */
-  --brand-to: #a855f7;   /* purple-500 */
-  --brand-accent: #ec4899; /* pink-500 */
+  --brand-from: #1a63e6;    /* Cobalt/Royal Blue from Banner */
+  --brand-to: #0ea5e9;      /* Sky Blue from Banner */
+  --brand-accent: #ffbe0b;  /* Golden Yellow from Banner */
 }
 
 @theme inline {
@@ -16,12 +16,51 @@
   --color-brand-accent: var(--brand-accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Overriding Tailwind Indigo with Cobalt/Royal Blue palette */
+  --color-indigo-50: #eff6ff;
+  --color-indigo-100: #dbeafe;
+  --color-indigo-200: #bfdbfe;
+  --color-indigo-300: #93c5fd;
+  --color-indigo-400: #60a5fa;
+  --color-indigo-500: #1a63e6;
+  --color-indigo-600: #1d4ed8;
+  --color-indigo-700: #1e40af;
+  --color-indigo-800: #1e3a8a;
+  --color-indigo-900: #172554;
+  --color-indigo-950: #0f172a;
+
+  /* Overriding Tailwind Purple with Sky Blue / Cyan palette */
+  --color-purple-50: #f0f9ff;
+  --color-purple-100: #e0f2fe;
+  --color-purple-200: #bae6fd;
+  --color-purple-300: #7dd3fc;
+  --color-purple-400: #38bdf8;
+  --color-purple-500: #0ea5e9;
+  --color-purple-600: #0284c7;
+  --color-purple-700: #0369a1;
+  --color-purple-800: #075985;
+  --color-purple-900: #0c4a6e;
+  --color-purple-950: #082f49;
+
+  /* Overriding Tailwind Pink with Golden Yellow / Amber palette */
+  --color-pink-50: #fffbeb;
+  --color-pink-100: #fef3c7;
+  --color-pink-200: #fde68a;
+  --color-pink-300: #fcd34d;
+  --color-pink-400: #fbbf24;
+  --color-pink-500: #ffbe0b;
+  --color-pink-600: #d97706;
+  --color-pink-700: #b45309;
+  --color-pink-800: #92400e;
+  --color-pink-900: #78350f;
+  --color-pink-950: #451a03;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0f;
-    --foreground: #ededed;
+    --background: #080d1a; /* rich navy dark background */
+    --foreground: #f1f5f9;
   }
 }
 
@@ -47,6 +86,6 @@ body {
 
 /* Soft glow สำหรับ hero และ mock UI */
 .brand-glow {
-  background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.25), transparent 60%),
-              radial-gradient(circle at 80% 80%, rgba(168, 85, 247, 0.18), transparent 60%);
+  background: radial-gradient(circle at 50% 0%, color-mix(in srgb, var(--brand-from) 25%, transparent), transparent 60%),
+              radial-gradient(circle at 80% 80%, color-mix(in srgb, var(--brand-to) 18%, transparent), transparent 60%);
 }
