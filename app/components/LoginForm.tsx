@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useState, type FormEvent } from "react";
 import { useRouter } from 'next/navigation';
-import { useNavigate } from 'react-router-dom';
 
 type Status = "idle" | "loading" | "error";
 

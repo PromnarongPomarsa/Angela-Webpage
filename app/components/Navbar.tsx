@@ -12,11 +12,12 @@ type NavItem = {
 
 const NAV_LINKS: NavItem[] = [
   { href: "/#features", label: "คุณสมบัติ", matchPrefix: "/" },
+  { href: "/docs", label: "Documentation", matchPrefix: "/docs" },
   { href: "/pricing", label: "Pricing", matchPrefix: "/pricing" },
 ];
 
 const RELEASES_URL =
-  "https://github.com/PromnarongPomarsa/Angela-Translator/releases";
+  "https://github.com/PromnarongPomarsa/Angela-Translator/releases/download/v2.1.7/AngelaTranslator-Setup.exe";
 
 function isActive(pathname: string, item: NavItem) {
   if (item.matchPrefix === "/") {
@@ -98,7 +99,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="hidden text-sm font-medium text-zinc-700 transition-colors hover:text-indigo-600 sm:inline-block dark:text-zinc-300 dark:hover:text-indigo-400"
           >
-            GitHub
+            Download
           </Link>
           <Link
             href="/login"

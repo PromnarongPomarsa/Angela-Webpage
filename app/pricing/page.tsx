@@ -22,7 +22,7 @@ type Tier = {
 const TIERS: Tier[] = [
   {
     name: "Free",
-    price: "$0",
+    price: "0 bath",
     period: "/ตลอด",
     description: "สำหรับผู้เริ่มต้นทดลองใช้งาน",
     features: [
@@ -35,7 +35,7 @@ const TIERS: Tier[] = [
   },
   {
     name: "Pro",
-    price: "$9",
+    price: "150 bath",
     period: "/เดือน",
     description: "สำหรับนักแปลและเกมเมอร์ตัวยง",
     features: [
@@ -51,7 +51,7 @@ const TIERS: Tier[] = [
   },
   {
     name: "Team",
-    price: "$29",
+    price: "300 bath",
     period: "/เดือน",
     description: "สำหรับทีมและสตูดิโอแปลเกม",
     features: [

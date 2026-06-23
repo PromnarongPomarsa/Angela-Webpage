@@ -15,20 +15,20 @@ type Tier = {
 const TIERS: Tier[] = [
   {
     name: "Free",
-    price: "$0",
+    price: "0 bath",
     period: "/ตลอด",
     description: "สำหรับผู้เริ่มต้นทดลองใช้งาน",
     features: [
       "แปลได้ 100 ครั้งต่อวัน",
       "1 ภาษาต้นทาง",
-      "OCR พื้นฐาน",
+      "Model AI พื้นฐาน",
       "เข้าถึงชุมชน Discord",
     ],
     cta: { label: "เริ่มใช้งานฟรี", href: "/login" },
   },
   {
     name: "Pro",
-    price: "$9",
+    price: "150 bath",
     period: "/เดือน",
     description: "สำหรับนักแปลและเกมเมอร์ตัวยง",
     features: [
@@ -44,7 +44,7 @@ const TIERS: Tier[] = [
   },
   {
     name: "Team",
-    price: "$29",
+    price: "300 bath",
     period: "/เดือน",
     description: "สำหรับทีมและสตูดิโอแปลเกม",
     features: [
