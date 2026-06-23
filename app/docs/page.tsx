@@ -3,6 +3,30 @@ import DocsSection from "../components/DocsSection";
 import DocsSidebar, { type DocsSection as DocsSectionMeta } from "../components/DocsSidebar";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import Image from "next/image";
+
+// import Images RPG Game
+import ScreenRPGGame1 from "@/public/Images/Screen_01.png";
+import ScreenRPGGame2 from "@/public/Images/Screen_02.png";
+import ScreenRPGGame3 from "@/public/Images/Screen_03.png";
+import ScreenRPGGame4 from "@/public/Images/Screen_04.png";
+import ScreenRPGGame5 from "@/public/Images/Screen_05.png";
+import ScreenRPGGame6 from "@/public/Images/Screen_06.png";
+
+const isImageRPGGame = [ScreenRPGGame1, ScreenRPGGame2, ScreenRPGGame3, ScreenRPGGame4, ScreenRPGGame5, ScreenRPGGame6]; 
+
+// Import Images Visual Novels Game
+import ScreenVisualGame1 from "@/public/Images/Screen_07.png";
+import ScreenVisualGame2 from "@/public/Images/Screen_08.png";
+
+const isImageVisualGame = [ScreenVisualGame1, ScreenVisualGame2];
+
+// Import Images Document Case
+import ScreenDoc1 from "@/public/Images/Screen_09.png";
+import ScreenDoc2 from "@/public/Images/Screen_10.png";
+
+const isImageDocumentCase = [ScreenDoc1, ScreenDoc2];
+
 
 export const metadata: Metadata = {
   title: "Documentation — Angela Translator",
@@ -393,19 +417,55 @@ export default function DocsPage() {
                       แปลบทสนทนาและภารกิจในเกม RPG ได้แบบเรียลไทม์ —
                       รับรู้เป้าหมายภารกิจ และเข้าใจบทสนทนาได้ง่าย ๆ
                     </p>
-                    <div className="mt-3 rounded-xl border border-dashed border-zinc-300 bg-zinc-50 p-6 text-center text-sm text-zinc-500 dark:border-white/10 dark:bg-white/[0.03] dark:text-zinc-400">
-                      ดูตัวอย่างภาพหน้าจอจริงได้ที่{" "}
-                      <a
-                        href={`${RELEASES_URL.replace("/releases", "")}#readme`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="font-medium text-indigo-600 hover:text-indigo-500 dark:text-indigo-400 dark:hover:text-indigo-300"
-                      >
-                        README บน GitHub
-                      </a>
+                    <div className="mt-3 overflow-hidden rounded-xl border border-zinc-200 dark:border-white/10">
+                      <Image
+                        src={isImageRPGGame[0]}
+                        alt="ตัวอย่างหน้าจอโปรแกรม Angela Translator"
+                        className="w-full"
+                        placeholder="blur"  // ได้เลยถ้า import แบบ static
+                      />
+                    </div>
+                    <div className="mt-3 overflow-hidden rounded-xl border border-zinc-200 dark:border-white/10">
+                      <Image
+                        src={isImageRPGGame[1]}
+                        alt="ตัวอย่างหน้าจอโปรแกรม Angela Translator"
+                        className="w-full"
+                        placeholder="blur"  // ได้เลยถ้า import แบบ static
+                      />
+                    </div>
+                    <div className="mt-3 overflow-hidden rounded-xl border border-zinc-200 dark:border-white/10">
+                      <Image
+                        src={isImageRPGGame[2]}
+                        alt="ตัวอย่างหน้าจอโปรแกรม Angela Translator"
+                        className="w-full"
+                        placeholder="blur"  // ได้เลยถ้า import แบบ static
+                      />
+                    </div>
+                    <div className="mt-3 overflow-hidden rounded-xl border border-zinc-200 dark:border-white/10">
+                      <Image
+                        src={isImageRPGGame[3]}
+                        alt="ตัวอย่างหน้าจอโปรแกรม Angela Translator"
+                        className="w-full"
+                        placeholder="blur"  // ได้เลยถ้า import แบบ static
+                      />
+                    </div>
+                    <div className="mt-3 overflow-hidden rounded-xl border border-zinc-200 dark:border-white/10">
+                      <Image
+                        src={isImageRPGGame[4]}
+                        alt="ตัวอย่างหน้าจอโปรแกรม Angela Translator"
+                        className="w-full"
+                        placeholder="blur"  // ได้เลยถ้า import แบบ static
+                      />
+                    </div>
+                    <div className="mt-3 overflow-hidden rounded-xl border border-zinc-200 dark:border-white/10">
+                      <Image
+                        src={isImageRPGGame[5]}
+                        alt="ตัวอย่างหน้าจอโปรแกรม Angela Translator"
+                        className="w-full"
+                        placeholder="blur"  // ได้เลยถ้า import แบบ static
+                      />
                     </div>
                   </div>
-
                   <div>
                     <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
                       Visual Novels Game
@@ -414,16 +474,21 @@ export default function DocsPage() {
                       สืบสวนไปพร้อมกันกับตัวละคร — แปลบทสนทนายาว ๆ
                       ใน Visual Novel ได้ต่อเนื่อง
                     </p>
-                    <div className="mt-3 rounded-xl border border-dashed border-zinc-300 bg-zinc-50 p-6 text-center text-sm text-zinc-500 dark:border-white/10 dark:bg-white/[0.03] dark:text-zinc-400">
-                      ดูตัวอย่างภาพหน้าจอจริงได้ที่{" "}
-                      <a
-                        href={`${RELEASES_URL.replace("/releases", "")}#readme`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="font-medium text-indigo-600 hover:text-indigo-500 dark:text-indigo-400 dark:hover:text-indigo-300"
-                      >
-                        README บน GitHub
-                      </a>
+                    <div className="mt-3 overflow-hidden rounded-xl border border-zinc-200 dark:border-white/10">
+                      <Image
+                        src={isImageVisualGame[0]}
+                        alt="ตัวอย่างหน้าจอโปรแกรม Angela Translator"
+                        className="w-full"
+                        placeholder="blur"  // ได้เลยถ้า import แบบ static
+                      />
+                    </div>
+                    <div className="mt-3 overflow-hidden rounded-xl border border-zinc-200 dark:border-white/10">
+                      <Image
+                        src={isImageVisualGame[1]}
+                        alt="ตัวอย่างหน้าจอโปรแกรม Angela Translator"
+                        className="w-full"
+                        placeholder="blur"  // ได้เลยถ้า import แบบ static
+                      />
                     </div>
                   </div>
 
@@ -435,16 +500,21 @@ export default function DocsPage() {
                       อ่านเอกสารได้ง่าย ๆ — แปลทีละ Paragraph
                       เพื่อความแม่นยำ
                     </p>
-                    <div className="mt-3 rounded-xl border border-dashed border-zinc-300 bg-zinc-50 p-6 text-center text-sm text-zinc-500 dark:border-white/10 dark:bg-white/[0.03] dark:text-zinc-400">
-                      ดูตัวอย่างภาพหน้าจอจริงได้ที่{" "}
-                      <a
-                        href={`${RELEASES_URL.replace("/releases", "")}#readme`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="font-medium text-indigo-600 hover:text-indigo-500 dark:text-indigo-400 dark:hover:text-indigo-300"
-                      >
-                        README บน GitHub
-                      </a>
+                    <div className="mt-3 overflow-hidden rounded-xl border border-zinc-200 dark:border-white/10">
+                      <Image
+                        src={isImageDocumentCase[0]}
+                        alt="ตัวอย่างหน้าจอโปรแกรม Angela Translator"
+                        className="w-full"
+                        placeholder="blur"  // ได้เลยถ้า import แบบ static
+                      />
+                    </div>
+                    <div className="mt-3 overflow-hidden rounded-xl border border-zinc-200 dark:border-white/10">
+                      <Image
+                        src={isImageDocumentCase[1]}
+                        alt="ตัวอย่างหน้าจอโปรแกรม Angela Translator"
+                        className="w-full"
+                        placeholder="blur"  // ได้เลยถ้า import แบบ static
+                      />
                     </div>
                   </div>
                 </div>

@@ -1,0 +1,13 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      # เพิ่ม env vars ที่ต้องการตรงนี้ เช่น:
+      # - NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=${NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY}
+      # - STRIPE_SECRET_KEY=${STRIPE_SECRET_KEY}
+    restart: unless-stopped

@@ -146,7 +146,7 @@ export default function Features() {
       className="border-y border-zinc-200 bg-zinc-50/60 py-20 sm:py-24 dark:border-white/5 dark:bg-white/[0.02]"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm font-semibold tracking-wide text-indigo-600 uppercase dark:text-indigo-400">
             คุณสมบัติ
           </p>
